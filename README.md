@@ -1,6 +1,6 @@
-# Zelt Frontend Test
+# Zelt FullStack Test
 ## Instructions
-Congratulations, you made it to the next step at Zelt's recruiting process! At this stage, we need to check your techinical skills by asking you to do what you like the most: writing code. In this technical challenge we would like to see your best work. The most important aspects that we're going to judge is your capacity to produce high quality code that is well organised, readable, testable and that follows the best practices in the software engineering industry. We'd like you to create a private repository (you can fork this repo or you can clone it and then use the code for your repo) and invite us (github usernames: **rbagrin**, **elgutierrez**) to have access to it. We expect you to collaborate with us the same way that you'd do in a daily basis when working at Zelt, meaning:
+Congratulations, you made it to the next step at Zelt's recruiting process! At this stage, we need to check your techinical skills by asking you to do what you like the most: writing code. In this technical challenge we would like to see your best work. The most important aspects that we're going to judge is your capacity to produce high quality code that is well organised, readable, testable and that follows the best practices in the software engineering industry. We'd like you to create a private repository (you can fork this repo or you can clone it and then use the code for your repo) and invite us (github usernames: **rbagrin**) to have access to it. We expect you to collaborate with us the same way that you'd do in a daily basis when working at Zelt, meaning:
 
 * Create (one or multiple, at your discretion) pull requests with your changes.
 * Write clear commit messages and keep your commit history clean.
@@ -8,7 +8,7 @@ Congratulations, you made it to the next step at Zelt's recruiting process! At t
 * It would be nice to give some attention to the UI/UX aspect.
 
 ## Brief
-1. Create a React app where you can see the list of superheroes that you can retrieve by calling the backend API we have provided (more details below).
+1. Create a FullStack app where you can see the list of superheroes that you can retrieve by calling the backend API we have provided (more details below).
 2. The home page should display the list of superheroes and should provide links to each superhero's own page.
 3. You should be able also to add/delete superheroes.
 4. All the pages that you are creating should be protected login protected (except the login page) meaning you can access those only if you are logged in.
