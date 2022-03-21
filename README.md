@@ -36,6 +36,7 @@ Congratulations, you made it to the next step at Zelt's recruiting process! At t
 * returns an array of superheroes
 * can be used only if authenticated
 
+## TO BE IMPLEMENTED:
 **GET /heroes/:id**
 * returns the details of a superhero
 * can be used only if authenticated
@@ -50,8 +51,6 @@ Congratulations, you made it to the next step at Zelt's recruiting process! At t
 * can be used only if authenticated
 
 ## Requirements
-- [ ] use React (with Typescript) and React Router
-- [ ] use Material UI components only
 - [ ] pages required: /login, /superheroes (the list of heroes), /superheroes/:id - superhero details page
 - [ ] home page should list all the superheroes (can use a list, a table, cards or whatever you think it would look nice and would do the job)
 - [ ] on the hompage you should be able to add a new superhero
@@ -61,8 +60,7 @@ Congratulations, you made it to the next step at Zelt's recruiting process! At t
 - [ ] your code should be tested
 
 ## Tips and advices
-* Feel free to design the pages you are creating as you wish. We will also appreciate the creativity, not only the code. You can use any MaterialUI components (Lists, Cards, Modals, Buttons, etc.).
-* We at Zelt are using formik to handle forms, if you wish you could use the same (not a requirement).
+* Feel free to design the pages you are creating as you wish. We will also appreciate the creativity, not only the code. At Zelt we are using Material UI components. You can use any MaterialUI components in your implementation (Lists, Cards, Modals, Buttons, etc.).
 * Feel free to add improvements/features (not a requirement).
 * Write clean code and try not having all the code of a page in the same file.
 
