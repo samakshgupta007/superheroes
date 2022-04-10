@@ -22,7 +22,7 @@ export class AppController {
   ): Promise<string> {
     const token = await this.appService.login(name, password);
 
-    response.cookie('token', token, { httpOnly: true });
+    response.cookie('token', token);
     return 'Success';
   }
 

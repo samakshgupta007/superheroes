@@ -7,6 +7,7 @@ import {
   Body,
   Req,
   UnauthorizedException,
+  ValidationPipe,
 } from '@nestjs/common';
 import { HeroService } from './hero.service';
 import { Hero } from './hero.entity';
@@ -32,7 +33,6 @@ export class HeroController {
     }
   }
 
-
   @Get('/')
   async getAllHeroes(@Req() request: Request): Promise<Hero[]> {
     await this.checkLoggedIn(request);
@@ -41,7 +41,10 @@ export class HeroController {
   }
 
   @Get('/:id')
-  async getHeroById(@Req() request: Request, @Param('id') id: string): Promise<Hero> {
+  async getHeroById(
+    @Req() request: Request,
+    @Param('id') id: string,
+  ): Promise<Hero> {
     await this.checkLoggedIn(request);
 
     return this.heroService.findById(id);
@@ -50,7 +53,7 @@ export class HeroController {
   @Post('/')
   async addHero(
     @Req() request: Request,
-    @Body() hero: CreateHero,
+    @Body(ValidationPipe) hero: CreateHero,
   ): Promise<Hero> {
     await this.checkLoggedIn(request);
 
