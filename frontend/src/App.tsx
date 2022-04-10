@@ -35,20 +35,8 @@ function App() {
     })();
   }, []);
 
-  const deleteSuperHero = () => {
-    (async () => {
-      // const deleteHeroResponse = await axios.delete(`http://localhost:8000/heroes/${window.location.params.id}`)
-      // console.log('got here now delete function', deleteHeroResponse);
-    })();
-  }
-
   return (
     <Box sx={{ mt: 10 }}>
-      <Container>
-        {/* <div>
-          <Button style = {{ border: '1px solid black', color: 'white', background: 'black', marginTop: '20px' }} onClick = {() => deleteSuperHero()}>Delete SuperHero</Button>
-        </div> */}
-        </Container >
         <div>
             <BrowserRouter>
               <Routes>
@@ -76,7 +64,7 @@ function App() {
                   </Route>
               </Routes>
               <Routes>
-                  <Route path="/superheroes/:id" element={<HeroDetails isLoggedIn={isLoggedIn}/>}>
+                  <Route path="/superheroes/:id" element={<HeroDetails/>}>
                   </Route>
               </Routes>
             </BrowserRouter>

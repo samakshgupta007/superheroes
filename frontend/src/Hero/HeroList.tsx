@@ -77,7 +77,7 @@ export default function HeroList({ heroes, isLoggedIn }: { heroes:  Heroes[], is
                             <Card sx={{ display: 'flex' }}>
                                 <CardContent sx={{ flex: 1 }}>
                                     <Typography component="h2" variant="h5">
-                                        <p>{item.id}. {item.name}</p>
+                                        <p>{item.id}. <a href={window.location.href + `/${item.id}`}>{item.name}</a></p>
                                     </Typography>
                                     <Typography component="p" variant="body1">
                                         <p><strong>Short Description:</strong> {item.shortDescription}</p>
